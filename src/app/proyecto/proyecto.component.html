@@ -1,0 +1,34 @@
+<div id="Proyectos">
+
+  <div class="container">
+    <br>
+    <br>
+    <h2><b>Proyectos</b></h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let proyecto of proyectos">
+          <td><h3>{{proyecto.tituloP}}</h3></td>
+          <td>{{proyecto.descripcionP}}</td>
+          <td>{{proyecto.repoP}}"</td>
+          <td *ngIf="user === 'admin'"><button class="btn btn-warning" routerLink="/editproy/{{proyecto.id}}"> Editar
+            </button></td>
+          <td *ngIf="user === 'admin'"><button class="btn btn-danger" (click)="onDelete(proyecto.id!)">Borrar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div><button *ngIf="user === 'admin'" class="btn btn-success btn-lg" routerLink="/nuevoproy"> Nuevo Proyecto
+      </button></div>
+    <br>
+  </div>
+
+</div>

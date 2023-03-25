@@ -1,0 +1,26 @@
+.list-group.list-group-horizontal {
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-color: transparent;
+    
+}
+
+i.fa-brands.fa-facebook.fa-2xl,
+i.fa-brands.fa-github.fa-2xl,
+i.fa-brands.fa-linkedin.fa-2xl {
+    color:#ffffff;
+}
+
+
+i.fa-brands.fa-facebook.fa-2xl:hover {
+    color:#0000ff;
+}
+
+i.fa-brands.fa-github.fa-2xl:hover {
+    color:#a52a5d;
+}
+
+i.fa-brands.fa-linkedin.fa-2xl:hover {
+    color:#0077b5;
+}
+
+

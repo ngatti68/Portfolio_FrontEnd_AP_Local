@@ -1,0 +1,111 @@
+.div-caja {
+    margin: 1em;
+  }
+  
+  .div-titulo {
+    display: flex;
+  }
+  
+  .login_titulo{
+    font-size: 1.4em;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    margin: 0.4em;
+    text-align: justify;
+  }
+  
+  .form {
+    margin: 1em 0;
+  }
+  
+  form label {
+    display: block;
+    font-size: 1.3em;
+    margin: 0 0 0.9em;
+  }
+  
+  .form_cuadro {
+    font-size: 1.1em;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    margin: 0.2em;
+    padding: 0.1em;
+    text-align: justify;
+  }
+  
+  .form_cuadro_valido {
+    border-color: rgb(49, 167, 49);
+    border-style: outset;
+    border-width: 0.2em;
+  }
+  
+  .form_cuadro_error {
+    border-color: rgb(247, 69, 69);
+    border-style: outset;
+    border-width: 0.2em;
+  }
+  
+  .form_cuadro_aviso {
+    display: flex;
+    color: rgb(247, 69, 69);
+    font-size: 0.9em;
+  }
+  
+  .form_input {
+    display: block;
+    width: 50%;
+    font-size: 1.1em;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    margin: 0.2em;
+    padding: 0.1em;
+    text-align: justify;
+  }
+  
+  .form_enviar {
+    display: inline;
+    margin: 1.2em;
+    padding: 0.5em;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: none;
+    transition: 1s all;
+    cursor: pointer;
+  }
+  
+  .form_enviar:hover {
+    background: rgb(80, 191, 255);
+    transform: scale(1.1);
+    color: rgb(39, 39, 39);
+  }
+  
+  .boton_cancelar {
+    display: inline;
+    margin-left: 1.4em;
+    padding: 0.5em;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: none;
+    transition: 1s all;
+    cursor: pointer;
+  }
+  
+  .boton_cancelar:hover {
+    background: rgb(255, 122, 122);
+    transform: scale(1.1);
+    color: rgb(39, 39, 39);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .form_input {
+      width: 75%;
+  }
+  }

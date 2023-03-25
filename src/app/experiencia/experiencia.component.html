@@ -1,0 +1,36 @@
+<div id="Experiencia">
+
+  <div class="container">
+    <br>
+    <br>
+    <h2><b>Experiencia Laboral</b></h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let experiencia of experiencias">
+          <td><h3>{{experiencia.tituloE}}</h3></td>
+          <td>{{experiencia.nombreE}}</td>
+          <td>{{experiencia.fechaE}}</td>
+          <td>{{experiencia.descripcionE}}</td>
+          <td *ngIf="user === 'admin'"><button class="btn btn-warning" routerLink="/editexp/{{experiencia.id}}"> Editar
+            </button></td>
+          <td *ngIf="user === 'admin'"><button class="btn btn-danger"
+              (click)="onDelete(experiencia.id!)">Borrar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div><button *ngIf="user === 'admin'" class="btn btn-success btn-lg" routerLink="/nuevaexp"> Nueva Experiencia
+      </button></div>
+  </div>
+  
+</div>

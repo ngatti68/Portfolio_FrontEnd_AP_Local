@@ -1,0 +1,35 @@
+<div id="Educacion">
+
+  <div class="container">
+    <br>
+    <br>
+    <h2><b>Educación</b></h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let educacion of educaciones">
+          <td><h3>{{educacion.tituloE}}</h3></td>
+          <td>{{educacion.nombreE}}</td>
+          <td>{{educacion.fechaE}}</td>
+          <td>{{educacion.descripcionE}}</td>
+          <td *ngIf="user === 'admin'"><button class="btn btn-warning" routerLink="/editedu/{{educacion.id}}"> Editar
+            </button></td>
+          <td *ngIf="user === 'admin'"><button class="btn btn-danger" (click)="onDelete(educacion.id!)">Borrar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div><button *ngIf="user === 'admin'" class="btn btn-success btn-lg" routerLink="/nuevaedu"> Nueva Educación
+      </button></div>
+  </div>
+
+</div>
